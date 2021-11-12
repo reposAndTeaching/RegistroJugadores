@@ -28,6 +28,10 @@ namespace RegistroJugadores
             InitializeComponent();
             d = new Data("LAPTOP-PC8SL5H1", "registroJugadores");
             this.WindowStyle = WindowStyle.None;
+            foreach(Jugador j in d.GetJugadores())
+            {
+                Debug.WriteLine(j.Nombre);
+            }
         }
     }
 }
